@@ -1,0 +1,41 @@
+# We can change this statement below to match any of the statements within '<>' 
+# This will set the interface that we are using
+AnchorLayout:
+
+<AnchorLayout>:
+    
+    # right, left, center_x
+    anchor_x: "right"
+    # bottom, top, center
+    anchor_y: "top"
+
+
+    Button:
+        text:"A"
+        size_hint: .10, .10
+    Button:
+        text:"B"
+        size_hint: .20, .20
+
+<BoxLayout>:
+    orientation: "vertical"
+    Label:
+        text:"Enter product name below"
+        size_hint: .5, .5
+        pos_hint: {"center_x": .5}
+
+    Button:
+        size_hint: 1, .5
+        
+
+<MainWidget>:
+    Button:
+        text: "Enter item name"
+        size: "100dp", "100dp"
+        pos: 0,0
+    Label:
+        text: "Search for an item"
+        size: "100dp", "80dp"
+        pos: "200dp", "100dp"
+
+    
